@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+}
+button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(126, 255, 71);
+    padding: 10PX 20PX;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    .name {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgb(126, 255, 71);
+        padding: 10PX 20PX;
+        border: none;
+        border-radius: 5px;
+    }

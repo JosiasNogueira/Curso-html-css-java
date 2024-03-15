@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adicionar Anime</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="teste">
+   <h1>Animes</h1>
+</header> 
+<div class="form">
+<label for="name"> <h3>Nome do anime:</h3></label> <br><br>
+<input type="text" id="name" placeholder="Nome">
+<label for="epsodio"> <h3>Episódio:</h3></label> <br><br>
+<input type="text" id="epsodio" placeholder="Episódio">
+<label for="estatus"> <h3>Status:</h3></label> <br><br>
+<input type="text" id="estatus" placeholder="Status">
+<button onclick="adicionar()">Adicionar</button>
+</div>
+<ul class="nomeAnime"></ul>
+<script>
+function adicionar() {
+    const nome = document.getElementById("name").value;
+    const ep = document.getElementById("epsodio").value;
+    const status = document.getElementById("estatus").value;
+
+    const novoItem = document.createElement("li");
+    novoItem.textContent = nome + " - " + ep + " - " + status;
+
+    // Adicionando a classe "item-lista" ao novo item
+    novoItem.classList.add("item-lista");
+
+    const botaoExcluir = document.createElement("button");
+    botaoExcluir.textContent = "Excluir";
+    botaoExcluir.setAttribute("onclick", "excluir(this)");
+
+    novoItem.appendChild(botaoExcluir);
+
+    const lista = document.querySelector(".nomeAnime");
+    lista.appendChild(novoItem);
+
+    document.getElementById("name").value = "";
+    document.getElementById("epsodio").value = "";
+    document.getElementById("estatus").value = "";
+}
+
+function excluir(elemento) {
+    elemento.parentElement.remove();
+}
+</script>
+</body>
+</html>
