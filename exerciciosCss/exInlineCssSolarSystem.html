@@ -1,7 +1,7 @@
 <!DOCTYPE html>
         <html>
            <head>
-                <title>Solar System</title>
+             <title>Solar System</title>
                 <style>
                     table,th,td {
                         border: 2px solid black;
@@ -47,5 +47,12 @@
                         <td>8</td> <td>Neptune</td> <td>4.495 billion km</td>
                     </tr>
                </table>
-            </body>
+               <footer id="data">
+               
+               </footer>
+               <script>
+                let dataAtual = new Date();
+                document.getElementById("data").innerHTML = dataAtual.toDateString();
+               </script>
+                </body>
         </html>
