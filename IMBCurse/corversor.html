@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+   <script src="./exjavaScriptIbm/conversor.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit Conversions</title>
 </head>
@@ -36,12 +37,12 @@
                                 <!-- Label for Temperature input -->
                                 <label for="Temperature">Ceksius</label><br>
 
-                                <input type="number" id="c"> <br>
+                                <input type="number" id="celsius"> <br>
                                  <!-- Label for Temperature output -->
                                  <!-- The conversion button -->
-                                 <button id="Temperature"> Convert</button> <br>
+                                 <button id="Temperature" onclick="temperature()"> Convert</button> <br>
                                  <!-- Label for Temperature output -->
-                                 <input type="number" id="f"> <br>
+                                 <input type="number" id="fahrenheit"> <br>
 
                                  <label for="Temperature">Fahrenheit</label>
                             <!-- The fields and button for temperature input will come here -->
@@ -66,13 +67,13 @@
                         <!-- Label for Weight input -->
                         <label for="Weight">kilograms</label> <br>
 
-                        <input type="number" id="kg"> <br>
+                        <input type="number" id="kilo"> <br>
 
                         <!-- The conversion button -->
-                        <button id="weight"> Convert</button> <br>
+                        <button id="weight" onclick="weight()"> Convert</button> <br>
                         <!-- Label for Weight output -->
 
-                        <input type="number" id="lbs"> <br>
+                        <input type="number" id="pounds"> <br>
 
                         <label for="weight">Pounds</label>
                     </fieldset>
@@ -101,10 +102,10 @@
                         <input type="number" id="km"> <br>
 
                         <!-- The conversion button -->
-                        <button id="distance">Convert</button> <br>
+                        <button id="distance" onclick="distance()">Convert</button> <br>
 
                         <!-- Label for Distance output -->
-                        <input type="number" id="m"> <br>
+                        <input type="number" id="miles"> <br>
 
                         <label for="Distance">Miles</label>
                     </fieldset>
